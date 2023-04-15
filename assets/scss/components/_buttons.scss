@@ -1,0 +1,9 @@
+.btn{
+    margin: 16px auto;
+    @include button($blue-color,$bkc-hover,$bkc);
+   
+}
+.btn-1{
+    // margin-left: 0px;
+    @include button($blue-color,$bkc-hover,$bkc);
+}
