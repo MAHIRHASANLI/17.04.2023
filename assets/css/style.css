@@ -63,6 +63,25 @@ ul {
   background-color: rgba(17, 106, 194, 0.84);
 }
 
+.form_btn {
+  margin-left: 22px;
+  background: rgb(16, 137, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 18px 50px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  border: none;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+}
+.form_btn:hover {
+  background-color: rgba(17, 106, 194, 0.84);
+}
+
 header .header-top {
   width: 100%;
   height: 100%;
@@ -726,4 +745,113 @@ section .section__destination .destination__item-6 {
     grid-column: 1/2;
     grid-row: 6/7;
   }
+}
+
+section .section__form {
+  background-color: red;
+  width: 86%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  color: gray;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  section .section__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+section .section__form .section__form-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media (max-width: 992px) {
+  section .section__form .section__form-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+section .section__form .section__form-1 img {
+  width: 100%;
+  height: 100%;
+}
+section .section__form .section__form-2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+@media (max-width: 992px) {
+  section .section__form .section__form-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+section .section__form .section__form-2 p {
+  color: rgb(16, 137, 255);
+  font-size: 20px;
+  font-family: "Moon Dance", cursive;
+  margin-bottom: 0;
+}
+section .section__form .section__form-2 h3 {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: black;
+  font-family: 25px;
+}
+section .section__form .section__form-2 h3::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background: rgb(16, 137, 255);
+}
+section .section__form .section__form-2 form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .section__form .section__form-2 form div {
+  width: 47%;
+  margin-bottom: 15px;
+}
+section .section__form .section__form-2 form div input {
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+section .section__form .section__form-2 form select {
+  border: 1px solid gray;
+}
+section .section__form .section__form-2 form textarea {
+  width: 100%;
+  height: 140px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+section .section__form .section__form-2 form .option_item {
+  width: 100%;
+}
+section .section__form .section__form-2 form .option_item #input-5 {
+  width: 100%;
+  margin: 8px 0;
+  height: calc(2.25rem + 2px);
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+section .section__form .section__form-2 form div:last-child {
+  padding-top: 20px;
+}
+section .section__form .section__form-2 form div:last-child .form_btn {
+  margin-left: 0px;
 }/*# sourceMappingURL=style.css.map */
