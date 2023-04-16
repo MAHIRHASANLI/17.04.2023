@@ -5,10 +5,17 @@
 }
 //
 .btn-1{
-    // margin-left: 0px;
     @include button($blue-color,$bkc-hover,$bkc);
 }
 //
 .form_btn{
     @include button($blue-color,$bkc-hover,$bkc);
+}
+//
+.touch-btn{
+    @include button($btn-color,$btn-hover,$bkc);
+    @include for-smal{
+       
+        
+    }
 }

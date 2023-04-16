@@ -1,73 +1,105 @@
 
+.header-nav-sticky {
+    width: 100%;
+    height: 75px;
+    background-color: $blue-color;
+    position: sticky;
+    top: -2px;
+    z-index: 999;
 
+    @include for-tablet {
+        display: none;
+    }
+
+    ul {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        @extend %display-r;
+
+        padding: 25px;
+        font-weight: 300;
+        font-size: 1.1rem;
+
+        li>a {
+            font-size: 16px;
+            color: $bkc;
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            font-weight: 900;
+            position: relative;
+            font-family:$Oswald;
+            
+        }
+        &>li>a{
+            &::after{
+                content: "";
+                position:absolute;
+                width: 0;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color:$bkc;
+                visibility: hidden;
+                opacity: 0;
+               transition:.3s;
+            }
+            &:hover::after{
+                width: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+    }
+}
 .header-nav {
     width: 100%;
-    height: 650px;
+    height: 550px;
     background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(10%);
+    z-index: 9;
     @include for-smal{
         height: 100%;
         
     }
-    .header-nav-sticky {
-        width: 100%;
-        height: 85px;
-        background-color: $blue-color;
-        position: sticky;
-        top: 0px;
-        // z-index: 999;
-
-        @include for-tablet {
-            display: none;
+       .fa-angles-left{
+            padding:30px;
+            border-radius:50%;
+            background-color:$white-color;
+            position: absolute;
+            top:250px;
+            left:10px;
+            visibility:hidden;
+            opacity: 0;
+            transition:.3s;
+            color:$black-color;
         }
-
-        ul {
-            width: 68%;
-            height: 100%;
-            margin: 0 auto;
-            @extend %display-r;
-
-            padding: 25px;
-            font-weight: 300;
-            font-size: 1.1rem;
-
-            li>a {
-                font-size: 16px;
-                color: $bkc;
-                text-transform: uppercase;
-                letter-spacing: .05rem;
-                font-weight: 900;
-                position: relative;
-                
-            }
-            &>li>a{
-                &::after{
-                    content: "";
-                    position:absolute;
-                    width: 0;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color:$bkc;
-                    visibility: hidden;
-                    opacity: 0;
-                   transition:.3s;
-                }
-                &:hover::after{
-                    width: 100%;
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-
+        .fa-angles-right{
+            padding:30px;
+            border-radius:50%;
+            background-color:$white-color;
+            position: absolute;
+            top:250px;
+            right: 10px;
+            visibility:hidden;
+            opacity: 0;
+            transition:.3s;
+            color:$black-color;
         }
-    }
+        &:hover i{
+            visibility:visible;
+            opacity: 1;
+        }
+        .icona:hover i{
+            background-color:$blue-color;
+            color:$white-color;
+        }
     .text {
         width: 100%;
         height: 100%;
-        // margin: 150px auto;
         padding-top: 150px;
         text-align: center;
         text-align: center;

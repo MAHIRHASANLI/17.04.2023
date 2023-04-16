@@ -1,5 +1,6 @@
 section{
 .book_now{
+    padding-top:0;
         text-align:center;
         width: 130px;
         margin:0 auto;
@@ -30,16 +31,13 @@ section{
     .section__team{
         width: 85%;
         height: 100%;
-        padding-top:50px;
+        // padding-top:20px;
         padding-bottom:50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 30px;
         margin: 0 auto;
-        // color: $gray-color;
-        // font-weight: 300;
-        // font-size: 1.1rem;
         @include for-tablet {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr ;

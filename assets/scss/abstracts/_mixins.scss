@@ -29,6 +29,9 @@
   @mixin for-tablet {
     @media (max-width: $desktop-breakpoint) { @content; }
   }
+  @mixin for-tablet-mini {
+    @media (max-width: $tablet-breakpoint) { @content; }
+  }
   @mixin for-tablet-min {
     @media (min-width: $desktop-breakpoint) { @content; }
   }
