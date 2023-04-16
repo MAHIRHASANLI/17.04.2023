@@ -5,6 +5,13 @@ header .header-top .container .row .col-3 i {
   align-items: center;
 }
 
+section .section__team [class*=section__team-] .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .header-nav .header-nav-sticky ul {
   display: flex;
   justify-content: space-between;
@@ -748,7 +755,6 @@ section .section__destination .destination__item-6 {
 }
 
 section .section__form {
-  background-color: red;
   width: 86%;
   height: 100%;
   padding-top: 100px;
@@ -854,4 +860,160 @@ section .section__form .section__form-2 form div:last-child {
 }
 section .section__form .section__form-2 form div:last-child .form_btn {
   margin-left: 0px;
+}
+
+section .book_now {
+  text-align: center;
+  width: 130px;
+  margin: 0 auto;
+}
+section .book_now p {
+  color: rgb(16, 137, 255);
+  font-size: 20px;
+  font-family: "Moon Dance", cursive;
+  margin-bottom: 0;
+}
+section .book_now h3 {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: black;
+  font-family: 25px;
+}
+section .book_now h3::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1.5px;
+  bottom: 0;
+  left: 35px;
+  background: rgb(16, 137, 255);
+}
+section .section__team {
+  width: 85%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  section .section__team {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  section .section__team {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+section .section__team [class*=section__team-] {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5px;
+}
+section .section__team [class*=section__team-] .icon {
+  position: absolute;
+  left: 10px;
+  top: 70px;
+  gap: 10px;
+}
+section .section__team [class*=section__team-] .icon a {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+section .section__team [class*=section__team-] .icon a i {
+  color: rgb(16, 137, 255);
+}
+section .section__team [class*=section__team-] h2 {
+  font-size: 28px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 30px;
+  color: black;
+}
+section .section__team [class*=section__team-] span {
+  line-height: 1.7;
+  color: rgb(16, 137, 255);
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 50px;
+}
+section .section__team [class*=section__team-] img {
+  width: 100%;
+  height: 75%;
+  transition: 0.3s;
+}
+section .section__team [class*=section__team-] img:hover {
+  transform: scale(1.1);
+}
+section .section__team .section__team-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+@media (max-width: 992px) {
+  section .section__team .section__team-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 576px) {
+  section .section__team .section__team-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+section .section__team .section__team-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+@media (max-width: 992px) {
+  section .section__team .section__team-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 576px) {
+  section .section__team .section__team-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+section .section__team .section__team-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+@media (max-width: 992px) {
+  section .section__team .section__team-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 576px) {
+  section .section__team .section__team-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+section .section__team .section__team-4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+@media (max-width: 992px) {
+  section .section__team .section__team-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 576px) {
+  section .section__team .section__team-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
 }/*# sourceMappingURL=style.css.map */
